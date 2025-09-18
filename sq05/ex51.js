@@ -21,7 +21,6 @@ senha = prompt("digite a senha:")
         alert("saõ iguais")
 
     }
-        
+
+
     
-     
-    }
