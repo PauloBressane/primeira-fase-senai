@@ -35,3 +35,44 @@
 // }
 
 
+
+//  let soma = 0
+
+//  for(let i=1; i<=100; i++){
+
+//      console.log(i);
+//  }
+
+// for(let i=1; i<=10; i++){
+//     let resultado = i * 5
+//     console.log(i + "x" + 5 "=" + resultado );
+// }
+
+// let numero = Number(prompt("tabuada do quê ?"))
+// for(let i=1; i<=10; i++){
+//     let resultado = i * numero
+//     console.log(i + "x" + numero + "=" + resultado);
+// }
+
+
+// for( let i=1; i<=20; i++){
+// if(i%2 == 1){
+//     alert(i)
+// }
+// }
+
+
+// for(let i=1; i<=20; i=i+2){
+//     alert(i)
+// }
+
+
+
+
+
+
+
+
+
+
+
