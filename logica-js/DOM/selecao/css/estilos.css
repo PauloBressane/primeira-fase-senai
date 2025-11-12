@@ -1,116 +1,130 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background: #eee;
+  background: #eee;
 }
 
 header {
-    background-color: #bbb;
-    /* padding-left: 20px;
+  background-color: #bbb;
+  /* padding-left: 20px;
     margin-bottom: 20px; */
-    padding: 20px 25px;
-    margin: 10px 0 0 0;
-    /*t,R,B,l*/
+  padding: 20px 25px;
+  margin: 10px 0 0 0; /*T,R,B,L*/
 }
 
 a {
-    color: #fff;
+  color: #fff;
 }
 
 .container {
-    display: flex;
-    
+  display: flex;
+  
 }
 
 nav {
-    background-color: #AAA;
-    padding: 15px o;
+  background-color: #aaa;
+  padding: 15px 0;
 
-    ul {
-        display: flex;
-        list-style: none;
-        justify-content: space-around;
-
-        li {
-            a {
-                color: #0f0;
-                text-decoration: none;
-                background: #fff;
-                padding: 5px;
-                transition: all ease-in-out 0.3s;
-
-                &:hover {
-                    color: #fff;
-                    background: #0f0;
-                }
-
-            }
-        }
-    }
-
-    /* }
-nav ul{
+  ul {
     display: flex;
     list-style: none;
-    justify-content: space-around; */
+    justify-content: space-around;
+
+    li {
+      a {
+        color: rgb(4, 119, 4);
+        text-decoration: none;
+        background: #fff;
+        padding: 5px;
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+          color: #fff;
+          background: rgb(4, 119, 4);
+        }
+      }
+    }
+  }
 }
 
+/* nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+} */
 
 main {
-    background-color: #CCC;
+  background-color: #ccc;
 
-    section {
-        padding: 20px;
+  section {
+    padding: 20px;
 
-        h2,
-        p {
-            margin-bottom: 20px;
-        }
-
-        p {
-            line-height: 1.5;
-
-        }
-
-
-        h3,
-        h4 {
-            margin-bottom: 15px;
-        }
-
-        article {
-            padding: 10px;
-        }
-
-
-        &#esportes {
-            p {
-                text-align: justify;
-            }
-
-
-        }
-
-        &#economia{
-            container{
-                flex-wrap: wrap;
-            }
-            article{
-                width: 300px;
-            }
-        }
-
-
-
+    h2,p{
+      margin-bottom: 20px;
     }
+
+    p{
+      line-height: 1.5;
+    }
+
+    h3,h4{
+      margin-bottom: 15px;
+    }
+
+    article{
+      padding: 10px;
+    }
+
+
+   
+    &#esportes {
+      p {
+        text-align: justify;
+      }
+    }
+
+    &#economia{
+      .container{
+        flex-wrap: wrap;
+      }
+      article{
+        width: 300px;
+      }
+    }
+    
+  }
 }
 
+footer {
+  background-color: #666;
+  padding: 15px 0;
+  color: #fff;
+  text-align: center;
+}
 
+/*arquivo serviços */
 
-    footer {
-        background-color: #666;
-    }
+.show{
+  display: block;
+}
+
+.hide{
+  display: nome;
+}
+
+button{
+  padding: 10px;
+  border: nome;
+  cursor: pointer;
+  &#show{
+    background: #0c55de;
+  }
+  &#hide{
+    background:#f00 ;
+  }
+}
+
