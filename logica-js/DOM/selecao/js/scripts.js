@@ -1,18 +1,46 @@
-//arquivo serviços
+//busca
 
-const servicoWeb = document.querySelector("#servico-web")
+const inputForm = document.querySelector("#busca")
 
-const showButton = document.querySelector("#show")
+const botaoBusca = document.querySelector("#botaoBuscar")
 
-const hideButton = document.querySelector("#Hide")
+const resultadoDiv = document.querySelector("#resultado")
 
-showButton.addEventListener("click",()=>{
-    servicoWeb.classList.add("show")
-    servicoWeb.classList.remova("Hide")
-
+inputForm.addEventListener("keydown" ,(e)=>{
+    console.log(e.key)
 })
 
-hideButton.addEventListener("click",()=>{
-    servicoWeb.classList.add("Hide")
-    servicoWeb.classList.remove("show")
+inputForm.addEventListener("focus",(e)=>{
+    inputForm.style.backgroundColor = "#ff0"
+})
+
+inputForm.addEventListener("blur",(e)=>{
+    inputForm.style.backgroundColor = ""
+})
+
+function searchResult(){
+    const valorBusca = inputForm.value.trim()
+    if(valorBusca){
+        resultadoDiv.textContent = `você buscou por${valorBusca}`
+    }else {
+        resultadoDiv.textContent = `por favor,insira algo na busca `
+    }
+}
+
+botaoBusca.addEventListener("click",(e)=>{
+    searchResult()
+})
+
+
+//botao de troca de tema
+
+const botaoTrocatema = document.querySelector("#tema")
+
+function alternarTema(){
+    document.body.classList.toggle("escuro")
+     document.body.classList.toggle("claro")
+}
+
+botaoTrocatema.addEventListener("click",(e)=>{
+    alternarTema()
 })
